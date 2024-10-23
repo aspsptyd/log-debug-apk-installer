@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         try {
-            super.onCreate(savedInstanceState);
+            // Proses jika ingin ditambahkan
+            logger.logToFile("Ini adalah percobaan untuk log ke dalam file .txt, bisa di custome berdasarkan kebutuhan");
         } catch (Exception error) {
+            // Untuk catch data log ke file
             logger.logToFile(String.valueOf(error));
-            logger.logToFile("Fahmi ganteng");
         }
     }
 }
